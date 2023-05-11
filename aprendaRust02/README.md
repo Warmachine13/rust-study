@@ -44,3 +44,37 @@ Variable shadowing is use for scope
 let total = 30;
 let total = "quarenta";
 ```
+
+separeted scope is possible by using {} 
+
+```rs
+let total = 30
+{
+    let total = 40
+}
+```
+and you can use variables from another scope 
+
+```rs
+let total = 30;
+{
+    let total = total + 20;
+}
+```
+
+constants can be use out functions and inside fuctions and by conversion use Upper snake case and need type of variable and contants cant't be defined two times
+```rs
+const TOTAL: u32 = 30;
+```
+can be used for make operations when can be defined on operation
+
+```rs
+const TOTAL: u32 = 30;
+const FULL_TOTAL: u32 = TOTAL + 1;
+```
+
+in rust variables need be defined in snake case and lower case let
+
+```rs
+const total_in_hours = 10
+```
